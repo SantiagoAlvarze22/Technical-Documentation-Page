@@ -94,20 +94,56 @@ section > code{
     #container{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:320px 1fr;
+        grid-template-rows:1fr 1fr;
         grid-template-areas:
             "navBar"
             "mainContent"
         ;
     }
+
+    .main-section{
+        width:85vw;
+    }
     .main-content{
         grid-area: mainContent;
+        position: relative;
+
     }
+
+    #main-doc{
+        position: absolute;
+        right: 0;
+        margin: 300px 0px 0px 0px;
+        padding: 0px 20px;
+        width: 90vw;
+    }
+
     #navbar{
+        position: absolute;
+        left: 0;
+        right: 0;
         grid-area: navBar;
-        border-right: 4px solid #eeeeee;
-        width: 100vw;
-   
+        margin: 0px auto;
+        width: 90%;
+        height: 300px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-bottom: 1px solid black;
+    }
+
+    #navbar ul{
+        border: 1px solid black;
+    }
+
+
+
+    #navbar header{
+        text-align:center;
+    }
+
+    section > code{
+        width: auto;
+        
     }
     
 }
