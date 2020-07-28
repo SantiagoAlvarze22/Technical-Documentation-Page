@@ -124,7 +124,7 @@ section > code{
         right: 0;
         grid-area: navBar;
         margin: 0px auto;
-        width: 90%;
+        width: 100%;
         height: 300px;
         overflow-y: auto;
         overflow-x: hidden;
